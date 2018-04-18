@@ -45,5 +45,8 @@
         "post-update-cmd":[
            "./app/post-update.sh"
         ]
+    },
+    "require-dev": {
+        "behat/behat": "^3.4"
     }
 }
