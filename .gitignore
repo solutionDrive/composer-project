@@ -1,6 +1,9 @@
 engine/*
 .env
 
+!/bin/console
+/bin/**
+
 # PhpStorm-Project
 /.idea/
 
