@@ -18,6 +18,9 @@
         "shopware/shopware": "^5.4",
         "vlucas/phpdotenv": "~2.0"
     },
+    "require-dev": {
+        "phpspec/phpspec": "^3.4"
+    },
     "extra": {
         "installer-paths": {
             "Plugins/Local/Backend/{$name}/": ["type:shopware-backend-plugin"],
@@ -37,14 +40,12 @@
            "./app/post-install.sh"
         ],
         "post-install-cmd": [
+           "./etc/post-install-load-behat.sh",
            "./app/post-install.sh"
         ],
         "post-update-cmd":[
+           "./etc/post-install-load-behat.sh",
            "./app/post-update.sh"
         ]
-    },
-    "require-dev": {
-        "behat/behat": "^3.4",
-        "phpspec/phpspec": "^3.4"
     }
 }
